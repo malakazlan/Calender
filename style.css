@@ -78,6 +78,11 @@ header .icons span:last-child {
 
 .calendar .weeks li {
     font-weight:500;
+    cursor: pointer;
+    transition: transform 0.3s ease ;
+}
+.calendar .weeks li:hover{
+    transform: scale(1.2);
 }
 
 .calendar ul li {
@@ -88,6 +93,10 @@ header .icons span:last-child {
     cursor: pointer;
     margin-top:30px;
     z-index: 1;
+
+}
+.calendar .weeks li.active{
+    color: #878787;
 
 }
 .days li.inactive{
